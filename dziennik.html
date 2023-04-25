@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="dziennik.js" defer></script>
+    <script src="teachingProgram.js"></script>
+    <link rel="stylesheet" href="dziennik.css" />
+
+    <title>Dziennik</title>
+  </head>
+  <body>
+    <h1>Dziennik praktyki zawodowej</h1>
+    <div class="guziki">
+      <button class="btn"><a href="index.html"> Metryczka</a></button>
+      <button class="btn"><a href="dziennik.html"> Dziennik zajęć</a></button>
+      <button class="btn"><a href="Podsumowanie.html"> Podsumowanie</a></button>
+    </div>
+    <fieldset id="all_dziennik">
+      <h2>Wprowadź nowe zajęcia</h2>
+
+      <legend>Informacje o zajęciach</legend>
+      <label
+        >Wybierz Datę Zajęć: <input type="date" name="data2" id="data2" />
+      </label>
+
+      Wybierz dział:
+      <select name="dział" id="dział">
+        <optgroup label="Moduł wstępny">
+          <option
+            value="Czynności wstępne i szkolenia, struktura i organizacja pracy informatyków"
+          >
+            Czynności wstępne i szkolenia, struktura i organizacja pracy
+            informatyków
+          </option>
+          <option
+            value="Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania informacji"
+          >
+            Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania
+            informacji
+          </option>
+          <option value="Konfiguracja sprzętu komputerowego i oprogramowania">
+            Konfiguracja sprzętu komputerowego i oprogramowania
+          </option>
+        </optgroup>
+
+        <optgroup
+          label="Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego"
+        >
+          <option value="Montaż sprzętu komputerowego">
+            Montaż sprzętu komputerowego
+          </option>
+          <option value="Naprawa  sprzętu komputerowego">
+            Naprawa sprzętu komputerowego
+          </option>
+          <option value="Konserwacja i obsługa sprzętu komputerowego">
+            Konserwacja i obsługa sprzętu komputerowego
+          </option>
+        </optgroup>
+
+        <optgroup label="Systemy informatyczne">
+          <option
+            value="Zasady administrowania systemami informatycznymi i archiwizowania danych"
+          >
+            Zasady administrowania systemami informatycznymi i archiwizowania
+            danych
+          </option>
+          <option value="Dokumentacja technologiczna przetwarzania informacj">
+            Dokumentacja technologiczna przetwarzania informacj
+          </option>
+          <option value="Biblioteki oprogramowania i zbiorów danych">
+            Biblioteki oprogramowania i zbiorów danych
+          </option>
+          <option
+            value="Zapoznanie z programami do administracji lokalnymi sieciami komputerowymi"
+          >
+            Zapoznanie z programami do administracji lokalnymi sieciami
+            komputerowymi
+          </option>
+          <option value="Obsługa programów używanych w przedsiębiorstwie">
+            Obsługa programów używanych w przedsiębiorstwie
+          </option>
+          <option value="komputerowe wspomaganie procesów projektowania">
+            komputerowe wspomaganie procesów projektowania
+          </option>
+          <option
+            value="Organizacja, zbieranie i kontrola danych, przetwarzanie i wykorzystywanie wyników"
+          >
+            Organizacja, zbieranie i kontrola danych, przetwarzanie i
+            wykorzystywanie wyników
+          </option>
+          <option
+            value="Elementy procesów projektowania, programowania i uruchamiania programów komputerowych"
+          >
+            Elementy procesów projektowania, programowania i uruchamiania
+            programów komputerowych
+          </option>
+          <option value="Ochrona danych i procesów przetwarzania">
+            Ochrona danych i procesów przetwarzania
+          </option>
+        </optgroup>
+        <optgroup label="Tworzenie aplikacji internetowych">
+          <option
+            value="Konfiguracja serwerów i przeglądarek pod obsługę aplikacji internetowych"
+          >
+            Konfiguracja serwerów i przeglądarek pod obsługę aplikacji
+            internetowych
+          </option>
+          <option value="Struktura witryny internetowej - HTML">
+            Struktura witryny internetowej - HTML
+          </option>
+          <option value="Stylizacja elementów witryny - CSS">
+            Stylizacja elementów witryny - CSS
+          </option>
+          <option value="Programowanie aplikacji internetowych - JS, PHP">
+            Programowanie aplikacji internetowych - JS, PHP
+          </option>
+          <option value="Testowanie aplikacji internetowych">
+            Testowanie aplikacji internetowych
+          </option>
+        </optgroup>
+      </select>
+
+      <fieldset id="Opiekun">
+        <legend>Opiekun</legend>
+        <label
+          >Marian Paździoch <input type="radio" name="Opiekun" value="Marian"
+        </label>
+        <label
+          >Konstanty Kox <input type="radio" name="Opiekun" value="Kox" />
+        </label>
+        <label
+          >Bastian Obsztyfitykultykiewicz
+          <input type="radio" name="Opiekun" value="Bastian" />
+        </label>
+      </fieldset>
+
+      <fieldset id="Materiał">
+        <legend>Realizacja materiału</legend>
+        <label>Sprawozdanie: <input type="text" id="Sprawozdanie" /> </label>
+        <label>Ile Godzin: <input type="number" id="Godzin" /> </label>
+        <label>Zrealizowano: <input type="checkbox" id="Realizacja" /> </label>
+        <label
+          >Stopień opanowania materiału: 1<input
+            type="range"
+            min="1"
+            max="6"
+            step="1"
+            id="Stopien"
+          />6
+        </label>
+      </fieldset>
+      <div class="button-container">
+        <button type="button" class="add-button" id="addBTN">Dodaj</button>
+        <button type="button" class="clear-button">Wyczyść</button>
+      </div>
+    </fieldset>
+  </body>
+</html>

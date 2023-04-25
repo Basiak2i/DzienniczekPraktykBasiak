@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Metryczka.css" />
+    <script src="Metryczka.js" defer></script>
+    <title>Metryczka</title>
+  </head>
+  <body>
+    <h1>Dziennik praktyki zawodowej</h1>
+    <div class="guziki">
+      <button class="btn"><a href="index.html"> Metryczka</a></button>
+      <button class="btn"><a href="dziennik.html"> Dziennik zajęć</a></button>
+      <button class="btn"><a href="Podsumowanie.html"> Podsumowanie</a></button>
+    </div>
+    <fieldset id="all_Metryczka">
+      <h2>Wprowadź dane ucznia i praktyki</h2>
+      <label>Imię: <input type="text" id="Imię" /> </label>
+      <label>Nazwisko: <input type="text" id="Nazwisko" /> </label>
+      <label>Klasa: <input type="text" id="Klasa" /> </label>
+      <label>Rok szkolny: <input type="text" id="Rok" /> </label>
+      <label>Odbytej w: <input type="text" id="Odbyta" </label>
+
+      <fieldset id="Trwanie">
+        <legend>Czas trwania praktyki</legend>
+
+        <label>Data rozpoczęcia <input type="date" id="start" /> </label>
+        <label>Data zakończenia <input type="date" id="end" /> </label>
+      </fieldset>
+      <div class="button-container">
+        <button type="button" class="add-button" id="addBTN">zatwierdź</button>
+      </div>
+    </fieldset>
+  </body>
+</html>
